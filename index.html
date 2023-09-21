@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ePortfolio">
+  <meta name="author" content="Jasmin">
+  <title>Home</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- mein Css-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Hier beginnt die navbar -->
+    <nav id="nav-fixed" class="navbar navbar-expand-lg navbar-light durchsichtig">
+      <p class="header-logo">
+        <a href="index.html">
+          <img src="img/index/logoklein.jpg" alt="Jasmin ePortfolio" class="logolink">
+        </a>
+      </p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#welcome">Willkommen</a>
+          </li>
+          <li class="nav-item">
+            <!-- Über mich  -->
+            <a class="nav-link" href="#about-me">Über mich</a>
+          </li>
+          <li class="nav-item">
+            <!-- Die Projekte -->
+            <a class="nav-link" href="#projects">Bildergalerie</a>
+          </li>
+          <li class="nav-item">
+            <!-- Kontakt -->
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+
+    <section id="welcome">
+      <div data-aos="fade-left">
+        <div class="row">
+          <!-- Logo von mir, bei klick evt. Animation dass es zu einem Foto von mir dreht -->
+          <div id="grosseslogo" class="grosseslogo">
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <!-- nächste row, mit 4 icons -->
+        <div id="icon-row" class="row justify-content-center">
+          <div class="col-6 col-lg-3 kleiner-abstand">
+            <!-- Popup-col mit icon fertig -->
+            <a href="#about-me">
+              <img src="img/index/iconinfos.png" alt="Über mich" class="rounded-circle icon-img">
+            </a>
+          </div>
+          <div class="col-6 col-lg-3 kleiner-abstand">
+            <a href="#projects">
+              <img src="img/index/icongalerie.png" alt="Projekte / Bildergalerie" class="rounded-circle icon-img">
+            </a>
+          </div>
+          <div class="col-6 col-lg-3 kleiner-abstand">
+            <a href="#contact">
+              <img src="img/index/iconkontakt.png" alt="Kontakt" class="rounded-circle icon-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- neuer Bereich -->
+  <section id="about-me">
+    <div class="container-fluid d-flex justify-content-center mittlerer-abstand text" data-aos="fade-left">
+      <div class="row">
+        <section class="col-12">
+          <h1>Portfolio 2019</h1>
+        </section>
+      </div>
+    </div>
+    <div data-aos="fade-left">
+      <div class="container  kleiner-abstand">
+        <div class="row text">
+
+          <div class="col-12 col-lg-6">
+            <!-- Bild von mir -->
+            <img src="img/infos/portrait.png" alt="Portrait von Jasmin" class="img-responsive">
+          </div>
+
+
+          <!-- Ist in row von oben -->
+          <div class="col-12 col-lg-6">
+            <div class="row">
+              <div class="col-12">
+                <!-- Infos über mich -->
+                <h2>Hallo</h2>
+                <h3>Ich bin Mediamatikerin</h3>
+                <p>
+                  Willkommen auf meiner ersten selbterstellten Portfolio-Website. Ich bin Mediamatikerin in Ausbildung (2019). Diese Website habe ich in einem ZLO (Zentrales Lernobjekt) erstellt.
+                  Nach der Schulzeit besuchte ich für ein Jahr den gestalterischen Vorkurs. Danach begann ich meine Lehre in der SBW Neue Medien.
+                  Die Tätigkeiten des Mediamatikers gefallen mir sehr, dabei ist das codieren von Websites, fotografieren und Projekte leiten. Ich lerne auch gerne in der BMS und BFS.
+                </p>
+              </div>
+              <div class="col-12">
+                <h3>Hobbys</h3>
+                <p>Meine Freizeit verbringe ich oft mit zeichnen, lesen und mich mit Freunden treffen. Ich habe sehr gerne Skizzenbücher in denen ich experimentieren kann und nicht jede Zeichnung perfekt sein muss.
+                  Manchmal bastle ich auch Collagen mit Papieren, Blättern und anderem was ich so finde. Ich lese gerne &laquo;Fear Street&raquo; und Comics, manchmal zeichne ich auch selbst Comics.
+                  Ab und zu mache ich auch anderes in meiner Freizeit, wie fotografieren, digital zeichnen, malen... je nachdem was mich gerade interessiert.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Galerie -->
+  <section id="projects">
+  <!-- die Galerie wird mit bootstrap "cards" aufgebaut, nicht Karte nennen den Google Maps ist eine Karte -->
+  <main class="container-fluid" data-aos="fade-left">
+    <div class="row">
+      <div class="col abstand-header text">
+        <h2>meine Bildergalerie</h2>
+        <p class="zentriert">Hier ist ein Auszug meiner Fotografien.</p>
+      </div>
+    </div>
+    <!-- Bootstrap style um bilder schön zu ordnen (masonry) -->
+    <div class="card-columns kleiner-abstand">
+      <!-- Erste "Karte"  Alp Bommen-->
+
+      <div class="card project-tile">
+        <img class="card-img" src="img/galerie/bearbeitet_see.jpg" alt="Foto mit Person im See">
+        <div class="card-body">
+          <h3 class="card-title">
+            Alp Bommen
+          </h3>
+          <p>In der KPMW wanderten wir am Donnerstag und Freitag, am Freitag habe ich das Foto aufgenommen und bearbeitet.</p>
+        </div>
+      </div>
+      <!--Foto einer Blume Karte-->
+      <div class="card project-tile">
+        <img class="card-img-top" src="img/galerie/blume.jpg" alt="Foto einer Blume">
+        <div class="card-body">
+          <h3>
+            Foto
+          </h3>
+          <p>Im Vorkurs hatten wir das Fach Fotografie, das Foto habe mit einer Canon beim Güterbahnhof aufgenommen.</p>
+        </div>
+      </div>
+      <div class="card project-tile">
+        <img class="card-img-top" src="img/galerie/schatten_wolken.jpg" alt="Blick durch Pflanzen auf Himmel">
+        <div class="card-body">
+          <h3>
+            Freikurs Fotografie
+          </h3>
+          <p>Im Vorkurs gab es einige Freikurse nach der Schule. Ich besuchte einen Fotografiekurs, wo ich mich in Photoshop vertiefen konnte und RAW Fotos bearbeiten kennenlernte.
+            Da der Kurs am Abend war gab es wenige Anmeldungen und ich war die einzige vom Vorkurs im Kurs. Das Foto im Hintergrund meiner Seite habe ich auch im Freikurs als RAW aufgenommen und im Photoshop bearbeitet.</p>
+        </div>
+      </div>
+      <!--  Blick über Schulter Karte-->
+      <div class="card project-tile">
+        <img class="card-img-top" src="img/galerie/person.jpg" alt="Blick über Schulter einer Person">
+        <div class="card-body">
+          <h3>
+            Blick über Schulter
+          </h3>
+          <p>Im Vorkurs fotografiert.</p>
+        </div>
+      </div>
+      <!--Mehrfachbelichtung Karte-->
+      <div class="card project-tile">
+        <img class="card-img-top" src="img/galerie/pflanzen.jpg" alt="Mehrfachbelichtung">
+        <div class="card-body">
+          <h3>
+            Mehrfachbelichtung
+          </h3>
+          <p>Im botanischen Garten fotografiert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Kontakt -->
+  <section id="contact">
+    <div data-aos="fade-left">
+      <div class="row mittlerer-abstand text justify-content-center">
+        <div class="col-12">
+          <h2>Kontakt</h2>
+        </div>
+        <div class="col col-lg-6">
+          <!-- <h3>Github</h3> -->
+          <p class="text-center">Hier kannst du mich finden:</p>
+          <div class="buttons row justify-content-center">
+            <div class="col-auto link-animiert">
+              <a href="https://jasminfaessler.ch/" class="link-weiss">Aktuelle Portfolio Website</a>
+            </div>
+            <div class="col-auto link-animiert">
+              <a href="https://github.com/jasmin-f" class="link-weiss">Github</a>
+            </div>
+            <div class="col-auto link-animiert">
+              <a href="https://www.linkedin.com/in/jasminfaessler/" class="link-weiss">Linkedin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Das Dreieck führt beim Klick zum Anfang der Seite-->
+  <div class="container dreieck-platzierung">
+    <a href="#welcome" class="overlay">
+      <div class="dreieck">
+        <h3 class="dreieck-text">Oben</h3>
+      </div>
+    </a>
+  </div>
+</main>
+<footer class="container-fluid ">
+  <div class="row">
+    <!-- Den Footer habe ich mit Sections statt divs gemacht -->
+    <section class="col-12 col-sm">
+      <h4> Adresse</h4>
+      <address>Jasmin Fässler<br>
+        Strassennummer X <br>
+        PLZ Ort</address>
+    </section>
+    <section class="col-12 col-sm">
+      <h4> Telefon</h4>
+      <address>
+        000 000 00 00</address>
+    </section>
+    <section class="col-12 col-sm">
+      <h4>E-Mail</h4>
+      <address>
+        <a href="mailto:jasmin.email@email-beispiel.ch?subject=portfolio"> jasmin.email@email-beispiel.ch</a>
+      </address>
+    </section>
+  </div>
+</footer>
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Scroll animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+
+</html>
